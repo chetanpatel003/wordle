@@ -66,13 +66,13 @@ function App() {
     for (let i = 0; i < 5; i++) {
       currWord += board[currAttempt.attempt][i];
     }
-    currWord += "\r";
+    // currWord += "\r";
     if (wordSet.has(currWord.toLowerCase())) {
       setCurrAttempt({ attempt: currAttempt.attempt + 1, letter: 0 });
     } else {
       alert("Word not found");
     }
-    currWord.replace("\r", "");
+    // currWord.replace("\r", "");
     console.log(currWord);
     if (currWord.toLocaleLowerCase( ) === correctWord) {
       stop();
